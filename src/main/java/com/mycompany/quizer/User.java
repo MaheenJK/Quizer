@@ -10,5 +10,8 @@ package com.mycompany.quizer;
  * @author Maheen
  */
 public class User {
-    
+    String user_name;
+    String password;
+    String role;
+    float score;
 }
