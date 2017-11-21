@@ -13,6 +13,14 @@ public class QuestionController {
     private Question model;
     private QuestionView view;
     
+    public void setQuestionId(int id){
+        model.setId(id);
+    }
+    
+    public int getQuestionId(){
+        return model.getId();
+    }
+        
     public QuestionController(Question model, QuestionView view){
         this.model = model;
         this.view = view;
@@ -67,6 +75,6 @@ public class QuestionController {
     }
 
     public void updateView(){				
-      view.printQuestionDetails(model.getType(), model.getPosition(), model.getText(), model.getOptions(), model.getCorrectAnswer(), model.getMaxScore());
+      view.printQuestionDetails(model. getId(), model.getType(), model.getPosition(), model.getText(), model.getOptions(), model.getCorrectAnswer(), model.getMaxScore());
    }	    
 }

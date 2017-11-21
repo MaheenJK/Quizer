@@ -10,10 +10,19 @@ package com.mycompany.quizer;
  * @author Maheen
  */
 public class Quiz {
+    private int id;
     private String title;
     private String description;
     private int totalQues;
     
+    public int getId(){
+        return id;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
+        
     public String getTitle(){
         return title;
     }

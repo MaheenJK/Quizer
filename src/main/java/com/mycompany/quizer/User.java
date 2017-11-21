@@ -10,11 +10,20 @@ package com.mycompany.quizer;
  * @author Maheen
  */
 public class User {
+    private int id;
     private String userName;
     private String password;
     private String role;
     private float score;
     
+    public int getId(){
+        return id;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
+        
     public String getUserName(){
         return userName;
     }

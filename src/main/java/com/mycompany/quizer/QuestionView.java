@@ -10,8 +10,9 @@ package com.mycompany.quizer;
  * @author Maheen
  */
 public class QuestionView {
-    public void printQuestionDetails(String type, int position, String text, String options, int correctAnswer, float maxScore){
+    public void printQuestionDetails(int id, String type, int position, String text, String options, int correctAnswer, float maxScore){
         System.out.println("Question: ");
+        System.out.println("Id: " + id);
         System.out.println("Question type: " + type);
         System.out.println("Position: " + position);
         System.out.println("Question text: " + text);

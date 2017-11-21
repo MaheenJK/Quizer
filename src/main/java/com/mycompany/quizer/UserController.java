@@ -18,6 +18,14 @@ public class UserController {
         this.view = view;
     }
     
+    public void setUserId(int id){
+        model.setId(id);
+    }
+    
+    public int getUserId(){
+        return model.getId();
+    }
+    
     public void setUserUserName(String userName){
         model.setUserName(userName);
     }
@@ -51,6 +59,6 @@ public class UserController {
     }
     
     public void updateView(){				
-      view.printUserDetails(model.getUserName(), model.getPassword(), model.getRole(), model.getScore());
+      view.printUserDetails(model.getId(), model.getUserName(), model.getPassword(), model.getRole(), model.getScore());
    }	
 }

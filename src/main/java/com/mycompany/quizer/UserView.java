@@ -10,8 +10,9 @@ package com.mycompany.quizer;
  * @author Maheen
  */
 public class UserView {
-    public void printUserDetails(String userName, String password, String role, float score){
+    public void printUserDetails(int id, String userName, String password, String role, float score){
         System.out.println("User: ");
+        System.out.println("Id: " + id);
         System.out.println("User name: " + userName);
         System.out.println("Password: " + password);
         System.out.println("User role: " + role);

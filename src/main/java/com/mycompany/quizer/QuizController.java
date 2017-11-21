@@ -13,6 +13,14 @@ public class QuizController {
     private Quiz model;
     private QuizView view;
     
+    public void setQuizId(int id){
+        model.setId(id);
+    }
+    
+    public int getQuizId(){
+        return model.getId();
+    }
+        
     public void setQuizTitle(String title){
         model.setTitle(title);
     }
@@ -38,6 +46,6 @@ public class QuizController {
     }
     
     public void updateView(){				
-      view.printQuizDetails(model.getTitle(), model.getDescription(), model.getTotalQues());
+      view.printQuizDetails(model.getId(), model.getTitle(), model.getDescription(), model.getTotalQues());
    }
 }

@@ -10,12 +10,21 @@ package com.mycompany.quizer;
  * @author Maheen
  */
 public class Question {
+    private int id;
     private String type;
     private int position;
     private String text;
     private String options;
     private int correctAnswer;
     private float maxScore;
+    
+    public int getId(){
+        return id;
+    }
+    
+    public void setId(int id){
+        this.id = id;
+    }
     
     public String getType(){
         return type;
