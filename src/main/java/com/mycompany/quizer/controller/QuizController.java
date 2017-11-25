@@ -3,7 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.quizer;
+package com.mycompany.quizer.controller;
+
+import com.mycompany.quizer.view.QuizView;
+import com.mycompany.quizer.model.Quiz;
 
 /**
  *

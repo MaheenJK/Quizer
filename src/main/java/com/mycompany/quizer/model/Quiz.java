@@ -3,17 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.quizer;
+package com.mycompany.quizer.model;
 
+import java.io.Serializable;
+import java.util.List;
+import javax.persistence.*;
 /**
  *
  * @author Maheen
  */
-public class Quiz {
+@Entity
+public class Quiz implements Serializable {
+    @Id
     private int id;
     private String title;
     private String description;
     private int totalQues;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "quiz")
+    List<Question> Ques;
+    @OneToOne
+    Users myUser;
     
     public int getId(){
         return id;

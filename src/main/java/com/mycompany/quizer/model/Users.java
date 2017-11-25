@@ -3,18 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.quizer;
+package com.mycompany.quizer.model;
 
+import java.io.Serializable;
+import javax.persistence.*;
 /**
  *
  * @author Maheen
  */
-public class User {
+@Entity
+public class Users implements Serializable {
+
+    @Id
     private int id;
     private String userName;
     private String password;
-    private String role;
+    private String userRole;
     private float score;
+    @OneToOne(mappedBy = "myUser")
+    private Quiz quiz;
     
     public int getId(){
         return id;
@@ -40,12 +47,12 @@ public class User {
         this.password = password;
     }
     
-    public String getRole(){
-        return role;
+    public String getUserRole(){
+        return userRole;
     }
     
-    public void setRole(String role){
-        this.role = role;
+    public void setUserRole(String userRole){
+        this.userRole = userRole;
     }
     
     public float getScore(){

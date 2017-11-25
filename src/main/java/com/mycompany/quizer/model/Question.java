@@ -3,13 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.quizer;
+package com.mycompany.quizer.model;
 
+import java.io.Serializable;
+import javax.persistence.*;
 /**
  *
  * @author Maheen
  */
-public class Question {
+@Entity
+public class Question implements Serializable {
+
+    @Id
     private int id;
     private String type;
     private int position;
@@ -17,6 +22,8 @@ public class Question {
     private String options;
     private int correctAnswer;
     private float maxScore;
+    @ManyToOne
+    private Quiz quiz;
     
     public int getId(){
         return id;
