@@ -40,8 +40,8 @@ public class Quizzer {
         Elephant elephant = (Elephant) context.getBean("elephant_saheli");			
         System.out.println(elephant.toString());	
 	Tiger tiger = (Tiger) context.getBean("tiger");
-	System.out.println(tiger.toString());
-	context.close();*/
+	System.out.println(tiger.toString());*/
+	context.close();
     }
     
     /**

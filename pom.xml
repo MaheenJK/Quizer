@@ -8,16 +8,21 @@
     <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.2.12.Final</version>
+            <type>jar</type>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.hibernate</groupId>
             <artifactId>ejb3-persistence</artifactId>
             <version>3.3.2.Beta1</version>
             <type>jar</type>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.2.9.Final</version>
-            <type>jar</type>
-        </dependency>
+            <artifactId>hibernate-annotations</artifactId>
+            <version>3.5.6-Final</version>
+	</dependency>-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -38,6 +43,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring.version>4.0.3.RELEASE</spring.version>
+        <spring.version>5.0.1.RELEASE</spring.version>
     </properties>
 </project>

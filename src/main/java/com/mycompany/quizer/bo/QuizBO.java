@@ -6,10 +6,8 @@
 package com.mycompany.quizer.bo;
 
 import com.mycompany.quizer.model.Question;
-import com.mycompany.quizer.model.Quiz;
 import com.mycompany.quizer.model.Users;
 import java.util.List;
-import javax.persistence.OneToOne;
 
 /**
  *

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Questions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <form>
+                <h1>Question Type</h1><br>
+                <input type="radio" name="qtype" value="mcq">Multiple Choice<br>
+                <input type="radio" name="qtype" value="tf">True False<br>
+                <input type="radio" name="qtype" value="num">Numeric<br>
+                Position:<input type="number" name="pos"><br>
+                Question Text<textarea name="qtext" cols="50" rows="5"></textarea>
+                <h1>Options</h1><br>
+                1<input type="text" name="1"><br>
+                2<input type="text" name="2"><br>
+                3<input type="text" name="3"><br>
+                4<input type="text" name="4"><br>
+                Correct Option/Answer:<input type="number" name="ans"><br>
+                Maximum Score:<input type="number" name="maxs"><br>
+                <input type="submit" value="Add Question">
+            </form>        
+        </div>
+    </body>
+</html>
